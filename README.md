@@ -87,6 +87,7 @@ That means the demo tests are not saying the page is accessible. They are showin
 2. Go through each tutorial in `questions/`
 3. Compare each test with the matching page in `pages/` to understand what is being tested.
 4. Run the real world example - following instructions at the bottom of 07-axe-limits.md
+5. Once you are done with all the tutorials - try having a go at writing your own test. Choose from the many axe-core rules and scan for it on a website. See a list of rules here: https://dequeuniversity.com/rules/axe/html/4.12
 
 ## Demo tests
 
