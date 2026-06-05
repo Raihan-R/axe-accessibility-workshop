@@ -24,3 +24,7 @@ You should now have a better understanding of what axe-core can do, what some co
 -- you can now move onto the real world example: npm run test:real-world --
 
 Expect the real world example to pass - demonstrating no axe-core violations being found.
+
+----------------------------------------------------------------------------
+
+Once you are done with all the tutorials - try having a go at writing your own test. Choose from the many axe-core rules and scan for it on a website. See a list of rules here: https://dequeuniversity.com/rules/axe/html/4.12
