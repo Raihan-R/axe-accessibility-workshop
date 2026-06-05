@@ -1,0 +1,35 @@
+{
+  "name": "playwright-axe-accessibility-workshop",
+  "version": "1.0.0",
+  "description": "A beginner-friendly demonstration repo showing how axe-core can be used with Playwright for automated accessibility testing.",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:demo": "playwright test tests/demo",
+    "test:real-world": "playwright test tests/real-world",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report",
+    "test:q1": "playwright test tests/demo/01-first-scan.spec.js",
+    "test:q2": "playwright test tests/demo/02-headings.spec.js",
+    "test:q3": "playwright test tests/demo/03-page-title.spec.js",
+    "test:q4": "playwright test tests/demo/04-links.spec.js",
+    "test:q5": "playwright test tests/demo/05-language.spec.js",
+    "test:q6": "playwright test tests/demo/06-colour-contrast.spec.js",
+    "test:q7": "playwright test tests/demo/07-axe-limits.spec.js"
+  },
+  "keywords": [
+    "accessibility",
+    "playwright",
+    "axe-core",
+    "wcag",
+    "testing"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@axe-core/playwright": "^4.11.0",
+    "@playwright/test": "^1.53.0",
+    "http-server": "^14.1.1"
+  }
+}
