@@ -58,6 +58,7 @@ Open the Playwright HTML report:
 ```bash
 npm run report
 ```
+Once you are all set up - you can find steps to follow in the Learning Path section below.
 
 ## !! Important note about the demo tests !!
 
