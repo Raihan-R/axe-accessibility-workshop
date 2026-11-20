@@ -16,7 +16,9 @@ The rule is `document-title`. The page has an empty title. A meaningful page tit
 
 ## 04 Links
 
-The rule is `link-name`. The empty anchor has no accessible name. Links need meaningful names so users understand the purpose of the link.
+The rule is `link-name`. The link to `/case/456` has no accessible name, so a screen reader user cannot identify its purpose from the name. “Click here” has an accessible name and passes this rule. A tester still needs to assess whether the link and its context make its purpose clear under WCAG 2.4.4.
+
+“View case 123” and “View case 456” would distinguish the links. If two links share a name and have different destinations, check whether the surrounding context makes each purpose clear. Reusing a name can be appropriate when links have the same purpose.
 
 ## 05 Language
 

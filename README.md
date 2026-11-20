@@ -38,10 +38,18 @@ npm install
 Install Playwright browsers:
 
 ```bash
-npx playwright install
+npx playwright install chromium
 ```
 
-Run the demonstration tests:
+Check your setup with the first exercise:
+
+```bash
+npm run test:q1
+```
+
+The test should pass and the terminal should report a `link-name` violation for the empty link. Playwright starts the local server for you.
+
+Run all the demonstration tests:
 
 ```bash
 npm run test:demo
@@ -58,8 +66,6 @@ Open the Playwright HTML report:
 ```bash
 npm run report
 ```
-Once you are all set up - you can find steps to follow in the Learning Path section below.
-
 ## !! Important note about the demo tests !!
 
 The demo tests are intentionally written to pass when axe-core identifies the expected issue.
@@ -81,13 +87,13 @@ That means the demo tests are not saying the page is accessible. They are showin
 └─ utils/                Shared axe-core helper utilities
 ```
 
-##  Learning path
+## Learning path
 
-1. Read files in `docs/`
-2. Go through each tutorial in `questions/`
-3. Compare each test with the matching page in `pages/` to understand what is being tested.
-4. Run the real world example - following instructions at the bottom of 07-axe-limits.md
-5. Once you are done with all the tutorials - try having a go at writing your own test. Choose from the many axe-core rules and scan for it on a website. See a list of rules here: https://dequeuniversity.com/rules/axe/html/4.12
+1. Read [What is axe-core?](docs/01-what-is-axe-core.md) and [Reading axe-core results](docs/02-reading-results.md). The results guide includes sample output if you cannot run the tests locally.
+2. Start with [Q1 First scan](questions/01-first-scan.md) and [Q4 Links](questions/04-links.md) during the live session. If you are working through the repo on your own, you can follow the questions in numerical order.
+3. Work through Q2, Q3, Q5, Q6 and Q7 at your own pace. If time is short, prioritise [Q3 Page title](questions/03-page-title.md) and [Q7 Axe-core limits](questions/07-axe-limits.md). Compare each result with its page in `pages/` and explain the effect on a user.
+4. Run `npm run test:real-world` when you finish. Open the [full-page audit](tests/real-world/full-page-audit.spec.js) and the [helper guide](docs/04-using-axe-utils.md) to see where the test selects WCAG tags and expects zero violations.
+5. Pick a rule from the [axe 4.11 rule catalogue](https://dequeuniversity.com/rules/axe/html/4.11). Use the [WCAG Quick Reference](https://www.w3.org/WAI/WCAG22/quickref/) to look up any success criterion it maps to. Write a Playwright test that runs the rule on a page and explain what you would still check manually.
 
 ## Demo tests
 

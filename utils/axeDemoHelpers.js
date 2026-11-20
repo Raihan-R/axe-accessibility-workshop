@@ -3,7 +3,7 @@ function formatViolations(violations) {
     console.log('\n========================================');
     console.log(`Violation ${index + 1}`);
     console.log('========================================');
-    console.log(`Rule:        ${violation.id}`);
+    console.log(`Rule ID:     ${violation.id}`);
     console.log(`Impact:      ${violation.impact}`);
     console.log(`Description: ${violation.description}`);
     console.log(`Help:        ${violation.help}`);
