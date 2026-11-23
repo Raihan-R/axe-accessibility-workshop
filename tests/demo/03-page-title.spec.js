@@ -10,7 +10,7 @@ test.describe('Demo 03: page title rule', () => {
       .withRules(['document-title'])
       .analyze();
 
-    console.table(formatViolations(results.violations));
+    formatViolations(results.violations);
 
     expect(findViolation(results, 'document-title')).toBeTruthy();
   });

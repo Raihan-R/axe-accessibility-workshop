@@ -10,7 +10,7 @@ test.describe('Demo 04: link rules', () => {
       .withRules(['link-name'])
       .analyze();
 
-    console.table(formatViolations(results.violations));
+    formatViolations(results.violations);
 
     expect(findViolation(results, 'link-name')).toBeTruthy();
   });

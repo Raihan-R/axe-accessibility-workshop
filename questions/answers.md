@@ -1,10 +1,12 @@
 # Answer guide
 
-These are suggested answers. Learners may phrase their answers differently.
+These are suggested answers.
 
 ## 01 First scan
 
-The scan should report at least one violation. The exact output may vary depending on the axe-core version, but learners should be able to identify the rule ID, impact, description, and affected elements.
+The broad scan should report multiple violations, including `image-alt` for the image without alternative text, `label` for the email input and `button-name` for the empty button. These affect how screen reader users identify the image, field and action. The exact output may vary with the axe-core version.
+
+The paragraph saying “Email address” provides a visual prompt but does not programmatically label the input. A `<label for="email">` associated with the input's ID would provide that relationship.
 
 ## 02 Headings
 

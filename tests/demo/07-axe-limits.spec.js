@@ -8,7 +8,7 @@ test.describe('Demo 07: axe-core limits', () => {
 
     const results = await new AxeBuilder({ page }).analyze();
 
-    console.table(formatViolations(results.violations));
+    formatViolations(results.violations);
 
     expect(results.violations).toEqual([]);
   });

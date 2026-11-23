@@ -16,11 +16,18 @@ class AxeUtils {
   }
 
   async audit(options = {}) {
-    const builder = new AxeBuilder({ page: this.page }).withTags(this.DEFAULT_TAGS);
+    const builder = new AxeBuilder({ page: this.page });
 
     const toArray = (value) => (!value ? [] : Array.isArray(value) ? value : [value]);
 
-    toArray(options.rules).forEach((rule) => builder.withRules(rule));
+    const rules = toArray(options.rules);
+
+    if (rules.length > 0) {
+      builder.withRules(rules);
+    } else {
+      builder.withTags(this.DEFAULT_TAGS);
+    }
+
     toArray(options.include).forEach((selector) => builder.include(selector));
     toArray(options.exclude).forEach((selector) => builder.exclude(selector));
 

@@ -10,7 +10,7 @@ test.describe('Demo 06: colour contrast rule', () => {
       .withRules(['color-contrast'])
       .analyze();
 
-    console.table(formatViolations(results.violations));
+    formatViolations(results.violations);
 
     expect(findViolation(results, 'color-contrast')).toBeTruthy();
   });

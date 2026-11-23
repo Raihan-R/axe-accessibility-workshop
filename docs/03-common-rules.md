@@ -10,4 +10,4 @@
 | `html-lang-valid` | The document's `lang` value uses a valid language code. | Assistive technology uses language metadata to choose pronunciation. | 3.1.1 Language of Page (A) |
 | `color-contrast` | Text has sufficient contrast against its background. | Sufficient contrast makes text easier to read, particularly for people with low vision. | 1.4.3 Contrast (Minimum) (AA) |
 
-Use [Q4 Links](../questions/04-links.md) to practise comparing an axe rule with the WCAG requirement it helps test. The [axe 4.11 rule catalogue](https://dequeuniversity.com/rules/axe/html/4.11) lists the available rules and tags.
+Use [Q4 Links](../questions/04-links.md) to practice comparing an axe rule with the WCAG requirement it helps test. The [axe 4.11 rule catalogue](https://dequeuniversity.com/rules/axe/html/4.11) lists the available rules and tags.

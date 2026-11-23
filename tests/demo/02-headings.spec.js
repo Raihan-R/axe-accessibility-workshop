@@ -10,9 +10,8 @@ test.describe('Demo 02: heading rules', () => {
       .withRules(['p-as-heading', 'heading-order', 'page-has-heading-one'])
       .analyze();
 
-    console.table(formatViolations(results.violations));
+    formatViolations(results.violations);
 
-    expect(results.violations.length).toBeGreaterThan(0);
     expect(findViolation(results, 'p-as-heading')).toBeTruthy();
   });
 });

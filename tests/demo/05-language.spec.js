@@ -10,7 +10,7 @@ test.describe('Demo 05: language rules', () => {
       .withRules(['html-lang-valid'])
       .analyze();
 
-    console.table(formatViolations(results.violations));
+    formatViolations(results.violations);
 
     expect(findViolation(results, 'html-lang-valid')).toBeTruthy();
   });
