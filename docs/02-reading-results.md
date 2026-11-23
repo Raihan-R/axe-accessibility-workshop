@@ -5,18 +5,18 @@ An axe-core scan returns a results object.
 The most important part for beginners is usually:
 
 ```js
-results.violations
+results.violations;
 ```
 
 Each violation contains useful information, including:
 
-| Field | Meaning |
-|---|---|
-| `id` | The axe-core rule that was triggered |
-| `impact` | The severity level reported by axe-core |
-| `description` | A short explanation of the issue |
-| `help` | A plain-English summary of the rule |
-| `nodes` | The page elements affected by the issue |
+| Field         | Meaning                                 |
+| ------------- | --------------------------------------- |
+| `id`          | The axe-core rule that was triggered    |
+| `impact`      | The severity level reported by axe-core |
+| `description` | A short explanation of the issue        |
+| `help`        | A plain-English summary of the rule     |
+| `nodes`       | The page elements affected by the issue |
 
 Q1 runs a broad scan on a page with several issues, including missing image alternative text, an unlabelled input and an unnamed button. The demo prints each rule ID, axe-core severity and affected elements. This is an excerpt from `npm run test:q1`:
 

@@ -5,6 +5,7 @@ Run:
 ```bash
 npm run test:q1
 ```
+
 This runs the test: "demonstrates axe-core identifying accessibility issues".
 
 Expect the test to pass with multiple reported violations. It scans [first-scan.html](../pages/first-scan.html), which contains an image without alternative text, an unlabelled email input and an unnamed button.

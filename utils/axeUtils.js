@@ -18,7 +18,8 @@ class AxeUtils {
   async audit(options = {}) {
     const builder = new AxeBuilder({ page: this.page });
 
-    const toArray = (value) => (!value ? [] : Array.isArray(value) ? value : [value]);
+    const toArray = (value) =>
+      !value ? [] : Array.isArray(value) ? value : [value];
 
     const rules = toArray(options.rules);
 

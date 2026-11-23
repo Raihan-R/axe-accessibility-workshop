@@ -15,6 +15,6 @@ Axe-core can help identify technical accessibility issues such as:
 - incorrect heading structure
 - incorrect ARIA usage
 
-Axe-core is useful because it can support your accessibility testing, quickly and easily, and it can be ran  as part of automated tests.
+Axe-core is useful because it can support your accessibility testing, quickly and easily, and it can be ran as part of automated tests.
 
 However, axe-core is not a complete accessibility test by itself. It should support manual accessibility testing, not replace it.
