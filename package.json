@@ -4,6 +4,10 @@
   "description": "A beginner-friendly demonstration repo showing how axe-core can be used with Playwright for automated accessibility testing.",
   "main": "index.js",
   "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint . --max-warnings=0",
+    "lint:fix": "eslint . --fix --max-warnings=0",
     "test": "playwright test",
     "test:demo": "playwright test tests/demo",
     "test:real-world": "playwright test tests/real-world",
@@ -29,7 +33,11 @@
   "license": "MIT",
   "devDependencies": {
     "@axe-core/playwright": "^4.11.0",
+    "@eslint/js": "10.0.1",
     "@playwright/test": "^1.53.0",
-    "http-server": "^14.1.1"
+    "eslint": "10.15.0",
+    "globals": "17.14.0",
+    "http-server": "^14.1.1",
+    "prettier": "3.10.1"
   }
 }

@@ -3,7 +3,9 @@ const { AxeBuilder } = require('@axe-core/playwright');
 const { formatViolations } = require('../../utils/axeDemoHelpers');
 
 test.describe('Demo 01: first axe-core scan', () => {
-  test('demonstrates axe-core identifying accessibility issues', async ({ page }) => {
+  test('demonstrates axe-core identifying accessibility issues', async ({
+    page,
+  }) => {
     await page.goto('/pages/first-scan.html');
 
     const results = await new AxeBuilder({ page }).analyze();
