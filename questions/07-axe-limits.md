@@ -18,13 +18,13 @@ It is to demonstrate that even though accessibility issues may exist on a page -
 4. What would you still test manually?
 5. Why is human judgement still needed?
 
-Well done! You have completed all the questions. 
+Well done! You have completed all the questions.
 You should now have a better understanding of what axe-core can do, what some common rules are and how to implement it into your Playwright tests.
 
 -- you can now move onto the real world example: npm run test:real-world --
 
 Expect the real world example to pass - demonstrating no axe-core violations being found.
 
-----------------------------------------------------------------------------
+---
 
 After the real-world example, try the final exercise in the [README learning path](../README.md#learning-path).

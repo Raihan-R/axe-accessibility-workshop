@@ -87,6 +87,7 @@ To open the Playwright HTML report:
 ```bash
 npm run report
 ```
+
 ## !! Important note about the demo tests !!
 
 The demo tests are intentionally written to pass when axe-core identifies the expected issue.
@@ -118,15 +119,15 @@ That means the demo tests are not saying the page is accessible. They are showin
 
 ## Demo tests
 
-| Test | What it demonstrates |
-|---|---|
-| `01-first-scan.spec.js` | Running a broad scan that reports several different issues |
-| `02-headings.spec.js` | Heading-related rules |
-| `03-page-title.spec.js` | Empty or missing page title |
-| `04-links.spec.js` | Links without accessible names |
-| `05-language.spec.js` | Invalid page language |
-| `06-colour-contrast.spec.js` | Low colour contrast |
-| `07-axe-limits.spec.js` | Why automated testing still needs human judgement |
+| Test                         | What it demonstrates                                       |
+| ---------------------------- | ---------------------------------------------------------- |
+| `01-first-scan.spec.js`      | Running a broad scan that reports several different issues |
+| `02-headings.spec.js`        | Heading-related rules                                      |
+| `03-page-title.spec.js`      | Empty or missing page title                                |
+| `04-links.spec.js`           | Links without accessible names                             |
+| `05-language.spec.js`        | Invalid page language                                      |
+| `06-colour-contrast.spec.js` | Low colour contrast                                        |
+| `07-axe-limits.spec.js`      | Why automated testing still needs human judgement          |
 
 ## Real-world example
 
@@ -145,6 +146,24 @@ Automated checks should be combined with manual testing, including:
 - zoom and reflow checks
 - checking that content and instructions are meaningful
 - checking that users can complete real journeys comfortably
+
+## Formatting and linting
+
+Check formatting and JavaScript code quality locally:
+
+```bash
+npm run format:check
+npm run lint
+```
+
+Apply formatting or ESLint's available automatic fixes:
+
+```bash
+npm run format
+npm run lint:fix
+```
+
+Review the changes after applying fixes. GitHub Actions runs the formatting and lint checks before the Playwright tests on pushes and pull requests targeting `master`.
 
 ## Useful commands
 
