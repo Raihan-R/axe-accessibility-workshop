@@ -48,7 +48,7 @@ Both commands should display a version number. If either command is not recogniz
 
 ### Install the workshop dependencies
 
-Clone or download this repo, then open a terminal in the repo folder containing `package.json`. Install the dependencies:
+Clone or download this repo, then open your terminal. Install the dependencies:
 
 ```bash
 npm install
